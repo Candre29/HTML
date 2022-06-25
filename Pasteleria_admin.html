@@ -1,0 +1,196 @@
+<!-- Pasteleria -->
+<!DOCTYPE html>
+<html lang="en">
+    <!-- HEAD -->
+<head>
+    <meta charset="UTF-8"><!--que set de caracteres se están usando-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--equivalencia-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--como va a estar desplegado por defecto-->
+    <title>Sweet Love</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: blueviolet;
+        }
+
+        /* Estilo de header */
+        header {
+            background-color: rgb(212, 54, 128);
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+
+        /* Crear 2 columnas con la misma posición en la fila */
+        nav {
+            /* float: left; */
+            /* width: 30%; */
+            height: 50px;
+            /* only for demonstration, should be removed */
+            background: rgba(235, 119, 99, 0.884);
+            padding: 20px;
+        }
+
+        .contacto{
+             float: right; 
+             width: 30%; 
+            height: 350px;
+            /* only for demonstration, should be removed */
+            background: rgba(225, 231, 133, 0.884);
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            /* float: left; */
+            padding: 20px;
+            /* width: 70%; */
+            background-color: rgb(172, 132, 180);
+            /* height: 300px; */
+        }
+
+        .formulario{
+            float: right; 
+            padding: 20px;
+            width: 100%;
+            background-color: rgb(241, 194, 213);
+            /* height: 300px; */
+
+        }
+
+        .all-browsers{
+            float: right; 
+            padding: 20px;
+            width: 100%;
+            background-color: rgb(250, 132, 180);
+            /* height: 300px; */
+        }
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Estilo de footer */
+        footer {
+            background-color: rgb(212, 54, 128);
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        /* Responsive layout */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+
+</head>
+<!-- BODY -->
+<body>
+    <header>
+        <h2>Sweet Love: Bakery</h2>
+        <img src="SLlogo.png" alt="Sweet Love logo" width="350" height="300">
+        <p>All rights reserved terms and conditions</p>
+    </header>
+
+    <section>
+        <nav>
+            <table style="margin:0 auto;">
+                <tr>
+                    <th>|Sabores     |   </th>
+                    <th>Adornos|</th>
+                    <th>Contacto|</th>
+                    <th>Sucursales|</th>
+                </tr>
+            </table>
+
+        </nav>
+
+        <nav class="contacto">
+            <h1>Contacto</h1>
+            <p>Puede comunicarse con nosotros al numero 44423123213</p><br>
+            <p>Atención de Lunes a viernes de 6:00 a 23:00 horas</p><br>
+            <p>Atención fines de semana de 8:00 a 16:00 horas</p><br>
+            <p>Visitanos en "Dirección"</p>
+
+        </nav>
+
+        <article>
+            <h1>Inventario</h1>
+            <h4>Sabores</h4>
+            <table>
+                <tr>
+                    <td>Unidades</td>
+                    <td>Identificador</td>
+                </tr>
+                <tr>
+                    <td>n</td><td>Chocoamor</td>
+                </tr>
+                <tr>
+                    <td>n</td><td>Fresamantico</td>
+                </tr>
+                <tr>
+                    <td>n</td><td>Dulce amor</td>
+                </tr>
+                <tr>
+                    <td>n</td><td>Frutienamorado</td>
+                </tr>
+            </table>
+            <h4>Adornos</h4>
+            <table>
+                <tr>
+                    <td>Unidades</td>
+                    <td>Identificador</td>
+                </tr>
+                <tr>
+                    <td>n</td><td>Corazones</td>
+                </tr>
+                <tr>
+                    <td>n</td><td>Luna</td>
+                </tr>
+                <tr>
+                    <td>n</td><td>Pareja</td>
+                </tr>
+            </table>
+            <h4>Pedidos</h4>
+
+            <table>
+                <tr>
+                    <td>Identificador</td>
+                    <td>Datos de pedido</td>
+                </tr>
+                <tr>
+                    <td>13123213</td> <td>Un pastel con no se que</td>
+                </tr>
+            </table>
+
+        </article>
+    </section>
+
+  
+
+   
+
+    </section>
+    <footer>
+        <p>Aviso de privacidad|hellosoyelavisodeprivacidad</p> <p>Productos Love</p> <p>@ pasteleria love</p>
+    </footer>
+</body>
+</html>

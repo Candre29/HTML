@@ -1,0 +1,227 @@
+<!-- Pasteleria -->
+<!DOCTYPE html>
+<html lang="en">
+    <!-- HEAD -->
+<head>
+    <meta charset="UTF-8"><!--que set de caracteres se están usando-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--equivalencia-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--como va a estar desplegado por defecto-->
+    <title>Sweet Love</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: blueviolet;
+        }
+
+        /* Estilo de header */
+        header {
+            background-color: rgb(212, 54, 128);
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+
+        /* Crear 2 columnas con la misma posición en la fila */
+        nav {
+            /* float: left; */
+            /* width: 30%; */
+            height: 50px;
+            /* only for demonstration, should be removed */
+            background: rgba(235, 119, 99, 0.884);
+            padding: 20px;
+        }
+
+        .contacto{
+             float: right; 
+             width: 30%; 
+            height: 350px;
+            /* only for demonstration, should be removed */
+            background: rgba(225, 231, 133, 0.884);
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            /* float: left; */
+            padding: 20px;
+            /* width: 70%; */
+            background-color: rgb(172, 132, 180);
+            /* height: 300px; */
+        }
+
+        .formulario{
+            float: right; 
+            padding: 20px;
+            width: 100%;
+            background-color: rgb(241, 194, 213);
+            /* height: 300px; */
+
+        }
+
+        .all-browsers{
+            float: right; 
+            padding: 20px;
+            width: 100%;
+            background-color: rgb(250, 132, 180);
+            /* height: 300px; */
+        }
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Estilo de footer */
+        footer {
+            background-color: rgb(212, 54, 128);
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        /* Responsive layout */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+
+</head>
+<!-- BODY -->
+<body>
+    <header>
+        <h2>Sweet Love: Bakery</h2>
+        <img src="SLlogo.png" alt="Sweet Love logo" width="350" height="300">
+        <p>All rights reserved terms and conditions</p>
+    </header>
+
+    <section>
+        <nav>
+            <table style="margin:0 auto;">
+                <tr>
+                    <th>|Sabores     |   </th>
+                    <th>Adornos|</th>
+                    <th>Contacto|</th>
+                    <th>Sucursales|</th>
+                </tr>
+            </table>
+
+        </nav>
+
+        <nav class="contacto">
+            <h1>Contacto</h1>
+            <p>Puede comunicarse con nosotros al numero 44423123213</p><br>
+            <p>Atención de Lunes a viernes de 6:00 a 23:00 horas</p><br>
+            <p>Atención fines de semana de 8:00 a 16:00 horas</p><br>
+            <p>Visitanos en "Dirección"</p>
+
+        </nav>
+
+        <article>
+            <h1>Sabores disponibles</h1>
+            <dl>
+                <dt>Chocoamor</dt>
+                <dd><img src="https://as2.ftcdn.net/v2/jpg/04/82/78/61/1000_F_482786128_gOCKr81l3xAAvnXfVimSaawjpOBAxwpT.jpg" alt="sabroso pastel de chocolate" width="200" heigh="200"></dd>
+                <dd>Pastel de chocolate de 300 g, elaborado con los más altos estandares en la repostería mexicana</dd>
+                <dd>Precio = $300</dd>
+                <br>
+                <dt>Fresamantico</dt>
+                <dd><img src="https://as1.ftcdn.net/v2/jpg/02/75/77/70/1000_F_275777008_0SUNB8OyBdyT4WfYD7wazZaoHE6FmeWd.jpg" alt="sabroso pastel de chocolate" width="200" heigh="200"></dd>
+                <dd>Pastel de fresa de 300 g, elaborado con los más altos estandares en la repostería mexicana</dd>
+                <dd>Precio = $300</dd>
+                <br>
+                <dt>Dulce amor</dt>
+                <dd><img src="https://as1.ftcdn.net/v2/jpg/04/88/52/86/1000_F_488528689_EoWz59awmxUJTsknEiUZAtTy1WIgb4U0.jpg" alt="sabroso pastel de chocolate" width="200" heigh="200"></dd>
+                <dd>Pastel de amor de 300 g, elaborado con los más altos estandares en la repostería mexicana</dd>
+                <dd>Precio = $650</dd>
+                <br>
+                <dt>Frutienamorado</dt>
+                <dd><img src="https://as2.ftcdn.net/v2/jpg/03/33/11/05/1000_F_333110548_FlBGumb5xN7XLvo31S5n9Kq5PHa20Yp5.jpg" width="200" heigh="200"></dd>
+                <dd>Pastel de frutas de 300 g, elaborado con los más altos estandares en la repostería mexicana</dd>
+                <dd>Precio = $350</dd>
+            </dl>
+
+        </article>
+    </section>
+
+    <section>
+        <article class="all-browsers"> 
+            <h1>Adornos disponibles</h1>
+            <dl>
+                <dt>
+                    Corazones
+                </dt>
+                <dd><img src="https://img.icons8.com/emoji/48/000000/revolving-hearts.png"/></dd>
+                <dd>Adorno de corazon</dd>
+                <dd>Precio = $50</dd>
+                <dt>
+                    Lunas
+                </dt>
+                <dd><img src="https://img.icons8.com/color/48/000000/moon.png"></dd>
+                <dd>Adorno de luna</dd>
+                <dd>Precio = $60</dd>
+                <dt>
+                    Pareja
+                </dt>
+                <dd><img src="https://img.icons8.com/dusk/64/000000/couple-man-woman.png"/></dd>
+                <dd>Adorno de pareja</dd>
+                <dd>Precio = $80</dd>
+
+
+            </dl>
+
+        </article>
+    </section>
+
+    <section class="formulario">
+        <h1>Pedido</h1>
+        <h3>Elija su sabor o sabores</h3>
+        <input type="checkbox" id="chocoamor" name="chocoamor">
+        <label for="chocoamor">Chocoamor </label><br>
+        <input type="checkbox" id="fresamor" name="fresamor">
+        <label for="fresamor">Fresamantico </label><br>
+        <input type="checkbox" id="dulceamor" name="dulceamor">
+        <label for="dulceamor">Dulce amor </label><br>
+        <input type="checkbox" id="frutienamorado" name="frutienamorado">
+        <label for="frutienamorado">Frutienamorado </label><br>
+        <h3>Elija sus adornos</h3>
+        <input type="checkbox" id="corazones" name="corazones">
+        <label for="chocoamor">Corazones </label><br>
+        <input type="checkbox" id="luna" name="luna">
+        <label for="luna">Luna </label><br>
+        <input type="checkbox" id="pareja" name="pareja">
+        <label for="pareja">Pareja </label><br>
+
+        <h3>Datos de contacto</h3>
+        <label for="nombre">Nombre completo</label>
+        <input type="text" id="nombre" name="nombre"><br>
+        <label for="direccion">Dirección</label>
+        <input type="text" id="direccion" name="direccion"><br>
+        <label for="numero">Número de teléfono</label>
+        <input type="number" id="numero" name="numer" maxlenght="10"><br>
+        <label for="corre">Correo electronico</label>
+        <input type="email" id="mail" name="mail"><br>
+        <label for="des">Descripción del pastel (500 caracteres)</label>
+        <input type="text" id="des" name="des" maxlenght="500"><br>
+
+    </section>
+    <footer>
+        <p>Aviso de privacidad|hellosoyelavisodeprivacidad</p> <p>Productos Love</p> <p>@ pasteleria love</p>
+    </footer>
+</body>
+</html>
